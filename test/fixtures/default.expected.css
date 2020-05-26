@@ -1,0 +1,22 @@
+#becky {
+  content: '\0062\0065\0063\006b\0079';
+  background: red;
+}
+
+#jackie:after {
+  content: '\1f602';
+  background: green;
+}
+
+#izzy:before {
+  content: '\0062\0020\0065\0020\0063\0020\006b\0020\0079';
+  background: blue;
+  content: unset;
+}
+
+#benji:after {
+  content: '\0062\0020\0065' attr(id) '\0063\0020\006b\0020\0079' attr(id) '\0020\1f415\0020';
+  background: hotpink;
+  content: no-close-quote;
+  content: "\2026\0020\1f468\200d\1f468\200d\1f467\200d\1f467\0020\007e\0020\0062\0065\0063\006b\0079"
+}

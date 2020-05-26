@@ -1,0 +1,22 @@
+#becky {
+  content: 'becky';
+  background: red;
+}
+
+#jackie:after {
+  content: '😂';
+  background: green;
+}
+
+#izzy:before {
+  content: 'b e c k y';
+  background: blue;
+  content: unset;
+}
+
+#benji:after {
+  content: 'b e' attr(id) 'c \006b \0079' attr(id) ' 🐕 ';
+  background: hotpink;
+  content: no-close-quote;
+  content: "… 👨‍👨‍👧‍👧 ~ becky"
+}
