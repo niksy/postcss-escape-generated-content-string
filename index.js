@@ -1,8 +1,7 @@
-import postcss from 'postcss';
 import valueParser from 'postcss-value-parser';
 import unicode from 'emoji-unicode';
 
-const escapedValueRegex = /(\\[\dA-Fa-f]{4})/;
+const escapedValueRegex = /(\\[\dA-Fa-f]{4,5})/;
 
 /**
  * @param  {string} string
@@ -34,12 +33,17 @@ function walkStrings(node) {
 		.join('');
 }
 
-export default postcss.plugin('postcss-escape-generated-content-string', () => {
-	return (css) => {
-		css.walkDecls('content', (decl) => {
-			const parsed = valueParser(decl.value);
-			parsed.walk(walkStrings);
-			decl.value = parsed.toString();
-		});
+export default () => {
+	return {
+		postcssPlugin: 'postcss-escape-generated-content-string',
+		Declaration: {
+			content: (decl) => {
+				const parsed = valueParser(decl.value);
+				parsed.walk(walkStrings);
+				decl.value = parsed.toString();
+			}
+		}
 	};
-});
+};
+
+export const postcss = true;

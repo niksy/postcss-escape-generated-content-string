@@ -2,7 +2,7 @@
 
 [![Build Status][ci-img]][ci]
 
-PostCSS plugin for escaping strings in generated content.
+[PostCSS][postcss] plugin for escaping strings in generated content.
 
 Features:
 
@@ -12,7 +12,7 @@ Features:
 ## Install
 
 ```sh
-npm install postcss-escape-generated-content-string --save
+npm install postcss postcss-escape-generated-content-string --save
 ```
 
 ## Usage
@@ -46,5 +46,6 @@ MIT © [Ivan Nikolić](http://ivannikolic.com)
 
 [ci]: https://travis-ci.com/niksy/postcss-escape-generated-content-string
 [ci-img]: https://travis-ci.com/niksy/postcss-escape-generated-content-string.svg?branch=master
+[postcss]: https://github.com/postcss/postcss
 
 <!-- prettier-ignore-end -->

@@ -2,6 +2,10 @@
 
 ## [Unreleased][]
 
+### Added
+
+-   Support for PostCSS 8
+
 ## [1.0.0][] - 2020-06-09
 
 ### Added
