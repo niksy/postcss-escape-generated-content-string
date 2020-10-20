@@ -33,7 +33,7 @@ function walkStrings(node) {
 		.join('');
 }
 
-export default () => {
+const plugin = () => {
 	return {
 		postcssPlugin: 'postcss-escape-generated-content-string',
 		Declaration: {
@@ -45,5 +45,6 @@ export default () => {
 		}
 	};
 };
+plugin.postcss = true;
 
-export const postcss = true;
+export default plugin;
