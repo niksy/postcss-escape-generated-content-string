@@ -1,6 +1,6 @@
 {
   "name": "postcss-escape-generated-content-string",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "PostCSS plugin for escaping strings in generated content.",
   "main": "index.cjs.js",
   "module": "index.esm.js",
